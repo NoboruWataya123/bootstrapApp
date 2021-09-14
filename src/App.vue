@@ -162,7 +162,7 @@
   </div>
 </template>
 
-<script lang="ts">
+<script>
 export default {
   data() {
     return {
@@ -170,7 +170,7 @@ export default {
     };
   },
   methods: {
-    handleToggle(): void {
+    handleToggle() {
       this.isActive = !this.isActive;
     },
   },
