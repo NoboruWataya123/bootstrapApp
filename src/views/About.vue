@@ -26,8 +26,8 @@
       <main id="main">
         <section class="login-section">
           <ul class="signup-nav">
-            <li><a href="login.html">Login</a></li>
-            <li><a href="register.html" class="btn btn-primary">Signup</a></li>
+            <li><a href="#">Login</a></li>
+            <li><a href="#" class="btn btn-primary">Signup</a></li>
           </ul>
           <div class="form-box">
             <form action="#" class="form">
@@ -46,9 +46,7 @@
                 Login<i class="icon-arrow-right"></i>
               </button>
               <div class="text-center">
-                <a href="forgot-pass.html" class="btn-forgot"
-                  >Forgot your password?</a
-                >
+                <a href="#" class="btn-forgot">Forgot your password?</a>
               </div>
             </form>
           </div>

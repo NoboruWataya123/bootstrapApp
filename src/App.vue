@@ -39,42 +39,30 @@
             ></a>
             <ul class="dropdown-menu">
               <li>
-                <a href="profile.html"
+                <a href="#"
                   ><i class="icon-user-circle-o"></i>Confirm Profile</a
                 >
               </li>
               <li>
-                <a href="personal-account.html"
-                  ><i class="icon-lock"></i>Change Password</a
-                >
+                <a href="#"><i class="icon-lock"></i>Change Password</a>
               </li>
               <li>
-                <a href="bank-account.html"
-                  ><i class="icon-bank"></i>Bank Account</a
-                >
+                <a href="#"><i class="icon-bank"></i>Bank Account</a>
               </li>
               <li>
-                <a href="personal-account.html"
-                  ><i class="icon-bank"></i>Personal Account</a
-                >
+                <a href="#"><i class="icon-bank"></i>Personal Account</a>
               </li>
               <li>
-                <a href="webhooks.html"
-                  ><i class="icon-settings"></i>Webhooks</a
-                >
+                <a href="#"><i class="icon-settings"></i>Webhooks</a>
               </li>
               <li>
-                <a href="user-management.html"
-                  ><i class="icon-group"></i>User Management</a
-                >
+                <a href="#"><i class="icon-group"></i>User Management</a>
               </li>
               <li>
-                <a href="tax-invoice.html"
-                  ><i class="icon-file-text-o"></i>Tax Invoice</a
-                >
+                <a href="#"><i class="icon-file-text-o"></i>Tax Invoice</a>
               </li>
               <li>
-                <a href="login.html"><i class="icon-sign-out"></i>Logout</a>
+                <a href="#"><i class="icon-sign-out"></i>Logout</a>
               </li>
             </ul>
           </li>
