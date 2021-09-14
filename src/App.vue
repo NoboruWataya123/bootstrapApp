@@ -1,5 +1,5 @@
 <template>
-  <div id="wrapper">
+  <div id="wrapper" class="" v-bind:class="{ 'nav-active': isActive }">
     <!-- header of the page -->
     <header id="header">
       <div class="brand-info">
@@ -8,7 +8,7 @@
         </div>
         <strong class="title">Betty Shop</strong>
       </div>
-      <a href="#" class="nav-opener"><span></span></a>
+      <a href="#" @click="handleToggle" class="nav-opener"><span></span></a>
       <div class="nav-holder">
         <ul class="buttons-nav d-none d-lg-flex">
           <li><a href="#" class="btn btn-primary">Demo</a></li>
@@ -75,22 +75,28 @@
         <ul class="nav">
           <li>
             <router-link to="/">
-              <a><i class="icon-dash"></i>Dashboard</a>
+              <a @click="handleToggle"><i class="icon-dash"></i>Dashboard</a>
             </router-link>
           </li>
           <li>
             <router-link to="/activity"
-              ><a><i class="icon-activity"></i>Activity</a></router-link
+              ><a @click="handleToggle"
+                ><i class="icon-activity"></i>Activity</a
+              ></router-link
             >
           </li>
           <li>
             <router-link to="/withdrawal">
-              <a><i class="icon-wallet"></i>Withdrawal</a></router-link
+              <a @click="handleToggle"
+                ><i class="icon-wallet"></i>Withdrawal</a
+              ></router-link
             >
           </li>
           <li>
             <router-link to="/auto-withdrawal">
-              <a><i class="icon-clock"></i>Auto Withdraw</a>
+              <a @click="handleToggle"
+                ><i class="icon-clock"></i>Auto Withdraw</a
+              >
             </router-link>
           </li>
         </ul>
@@ -156,7 +162,20 @@
   </div>
 </template>
 
-<script lang="ts"></script>
+<script lang="ts">
+export default {
+  data() {
+    return {
+      isActive: true,
+    };
+  },
+  methods: {
+    handleToggle() {
+      this.isActive = !this.isActive;
+    },
+  },
+};
+</script>
 
 <style lang="scss">
 #app {
