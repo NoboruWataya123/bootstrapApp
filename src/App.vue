@@ -73,30 +73,24 @@
       <!-- side navigation styles -->
       <nav class="side-nav">
         <ul class="nav">
-          <li>
+          <li @click="handleToggle">
             <router-link to="/">
-              <a @click="handleToggle"><i class="icon-dash"></i>Dashboard</a>
+              <a><i class="icon-dash"></i>Dashboard</a>
             </router-link>
           </li>
-          <li>
+          <li @click="handleToggle">
             <router-link to="/activity"
-              ><a @click="handleToggle"
-                ><i class="icon-activity"></i>Activity</a
-              ></router-link
+              ><a><i class="icon-activity"></i>Activity</a></router-link
             >
           </li>
-          <li>
+          <li @click="handleToggle">
             <router-link to="/withdrawal">
-              <a @click="handleToggle"
-                ><i class="icon-wallet"></i>Withdrawal</a
-              ></router-link
+              <a><i class="icon-wallet"></i>Withdrawal</a></router-link
             >
           </li>
-          <li>
+          <li @click="handleToggle">
             <router-link to="/auto-withdrawal">
-              <a @click="handleToggle"
-                ><i class="icon-clock"></i>Auto Withdraw</a
-              >
+              <a><i class="icon-clock"></i>Auto Withdraw</a>
             </router-link>
           </li>
         </ul>
@@ -166,7 +160,7 @@
 export default {
   data() {
     return {
-      isActive: true,
+      isActive: false,
     };
   },
   methods: {
