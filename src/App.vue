@@ -170,7 +170,7 @@ export default {
     };
   },
   methods: {
-    handleToggle() {
+    handleToggle(): void {
       this.isActive = !this.isActive;
     },
   },
